@@ -1,0 +1,22 @@
+[
+    {
+       "id": 1,
+       "name": "Parveen Akhter",
+       "username": "Headmistress",
+       "email": "",
+       "address": {
+           "id": 1,
+           "street": "",
+           "suit": "",
+           "city": "",
+           "zipcode": "",
+           "geo": {
+               "lat": "",
+               "lag": ""
+           }
+       },
+       "phone": "",
+       "website": ""
+
+    }
+]
