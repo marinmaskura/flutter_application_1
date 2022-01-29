@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Ministry of Education",
+        "web_url":"http://www.moedu.gov.bd/"
+    },
+    {
+        "id":2,
+        "name":"Department of Secondary and Higher Education",
+        "web_url":"http://www.dshe.gov.bd/"
+    },
+    {
+        "id":3,
+        "name":"Banbase",
+        "web_url":"http://www.banbeis.gov.bd/"
+    },
+    {
+        "id":4,
+        "name":"Naeem",
+        "web_url":"http://www.naem.gov.bd/"
+    },
+    {
+        "id":5,
+        "name":"NCTB",
+        "web_url":"http://www.nctb.gov.bd/"
+    },
+    {
+        "id":6,
+        "name":"Teacher window",
+        "web_url":"http://www.teachers.gov.bd/"
+    },
+    {
+        "id":7,
+        "name":"Teenage window",
+        "web_url":"http://www.konnect.edu.bd/"
+    }
+]

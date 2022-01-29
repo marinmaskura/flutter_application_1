@@ -1,18 +1,45 @@
-class TeacherModel { 
+// To parse this JSON data, do
+//
+//     final teacherModel = teacherModelFromJson(jsonString);
 
-   int? id;
-  String? name;
-  String? img;
-  String? education;
+import 'dart:convert';
 
-  TeacherModel({
-    this.id,this.name, this.img, this.education
-  });
+List<TeacherModel> teacherModelFromJson(String str) => List<TeacherModel>.from(json.decode(str).map((x) => TeacherModel.fromJson(x)));
 
-  TeacherModel.fromJson(Map<String, dynamic> json){
-      this.id = json['id'];
-      this.name = json['name'];
-  }
+String teacherModelToJson(List<TeacherModel> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-  
+class TeacherModel {
+    TeacherModel({
+        this.id,
+        this.name,
+        this.username,
+        this.phone,
+        this.address,
+        this.image,
+    });
+
+    int? id;
+    String? name;
+    String? username;
+    String? phone;
+    String? address;
+    String? image;
+
+    factory TeacherModel.fromJson(Map<String, dynamic> json) => TeacherModel(
+        id: json["id"],
+        name: json["name"],
+        username: json["username"],
+        phone: json["phone"],
+        address: json["address"],
+        image: json["image"],
+    );
+
+    Map<String, dynamic> toJson() => {
+        "id": id,
+        "name": name,
+        "username": username,
+        "phone": phone,
+        "address": address,
+        "image": image,
+    };
 }

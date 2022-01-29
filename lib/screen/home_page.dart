@@ -1,3 +1,5 @@
+
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -12,161 +14,178 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       endDrawer: MyDrawer(),
-      appBar: AppBar(title: Center(child: Text("Govt. Model Girls High School")),
-      leading: Image.asset('assets/images/103225.png'),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Govt. Model Girls High School"),
+      leading: TextButton(onPressed:  (){
+        Navigator.pushNamed(context, AppConstats.WebPageView);
+      }, child: Image.asset('assets/images/103225.png',
+     ),
+      // Icon(Icons.arrow_back, ),
+      style: ElevatedButton.styleFrom(primary: Colors.green.shade900),
+      ),
+      // Image.asset('assets/images/103225.png'),
       backgroundColor: Colors.green.shade900,
       ),
-      body: SizedBox(
-        height: MediaQuery.of(context).size.height,
-        width: double.maxFinite,
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            ImageFiltered(imageFilter: ImageFilter.blur(sigmaX: 0, sigmaY: 0),
-            child: Image.asset("assets/images/bangladesh_map.png",
-            fit: BoxFit.cover,)
-            ),
-          Column(
-        children: [
-          SizedBox(height: 15.0,),
-          Row(        
-            children: [
-              Container(
+      body: SingleChildScrollView(
+        child: SizedBox(
+            height: MediaQuery.of(context).size.height,
+            width: double.maxFinite,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
                 
-              )
-            ],
-          ),
-          Row(        
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  
-                  context: context,
-                  name: 'First Page',
-                  iconData: Icons.content_paste_outlined,
-                  color: Colors.green.shade900,
-                  onTab: () {
-                    
-                    Navigator.pushNamed(context, '/firstpage');
-                  },
+                ImageFiltered(
+                  imageFilter: ImageFilter.blur(),
+                child: Image.asset("assets/images/bangladesh_map.png",
+                fit: BoxFit.cover,)
+                ),
+                SizedBox(height: 10.0,),
+              SingleChildScrollView(
+                child: Column(
+                children: [                
+                SizedBox(height: 30.0,),
+                Container(
+                    margin: EdgeInsets.all(10.0),
+                    // padding: EdgeInsets.all(10.0),
+                    height: 200.0,
+                    width: 500.0,
+                    child: Image.asset('assets/images/shongbordhona_1.jpg'),
                   ),
+                  SingleChildScrollView(
+                    child: Column(
+                      // mainAxisAlignment: MainAxisAlignment.start,
+                      // crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      // margin: EdgeInsets.all(10.0),                  
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        
+                        context: context,
+                        name: 'About',
+                        iconData: Icons.text_snippet_outlined,
+                        color: Colors.green.shade900,
+                        onTab: () {
+                          
+                          Navigator.pushNamed(context, '/firstpage');
+                        },
+                        ),
+                        ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Introduction',
+                        iconData: Icons.how_to_reg_outlined,
+                        color: Colors.green.shade900,
+                        onTab: () {
+                          Navigator.pushNamed(context, '/introduction');
+                        },
+                      ),
+                       ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Teacher List',
+                        iconData: Icons.portrait_outlined,
+                        color: Colors.green.shade900,
+                        onTab: () {                    
+                        Navigator.pushNamed(context, '/teacherview');
+                        },
+                      ),
+                    ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Student',
+                        iconData: Icons.supervised_user_circle,
+                        color: Colors.green.shade900,
+                        onTab: () { 
+                          Navigator.pushNamed(context, AppConstats.StudentView);                   
+                        },
+                      ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Photo Gallery',
+                        iconData: Icons.photo_camera_outlined,
+                        color: Colors.green.shade900,
+                        onTab: () {  
+                          Navigator.pushNamed(context, '/photogallery');                  
+                        },
+                      ),
+                  ),
+                    ),                  
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Important link',
+                        iconData: Icons.link_rounded,
+                        color: Colors.green.shade900,
+                        onTab: () {  
+                          Navigator.pushNamed(context, '/weblinkview');                  
+                        },
+                      ),
+                  ),
+                    ),                  
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0,left: 15.0, top: 5.0, bottom: 5.0),
+                      child: Card(
+                      elevation: 10,
+                      color: Colors.green.shade900,
+                      child: _customButton(
+                        context: context,
+                        name: 'Contact',
+                        iconData: Icons.phone_outlined,
+                        color: Colors.green.shade900,
+                        onTab: () {
+                          Navigator.pushNamed(context, '/manpower');
+                        },
+                      ),
+                    ),
+                    ),
+                      SizedBox(height: 100.0,)
+                      ],
+                    ),
+                  )
+                
+                ],
+                      ),
               ),
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'Introduction',
-                  iconData: Icons.how_to_reg_outlined,
-                  color: Colors.green.shade900,
-                  onTab: () {
-                    Navigator.pushNamed(context, '/introduction');
-                  },
-                ),
-              ),              
-            ],
+              ],
+            ),
           ),
-          Row(        
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'Manpower',
-                  iconData: Icons.portrait_outlined,
-                  color: Colors.green.shade900,
-                  onTab: () {
-                    Navigator.pushNamed(context, '/manpower');
-                  },
-                ),
-              ),
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'Student',
-                  iconData: Icons.supervised_user_circle,
-                  color: Colors.green.shade900,
-                  onTab: () { 
-                    Navigator.pushNamed(context, AppConstats.StudentView);                   
-                  },
-                ),
-              ),              
-            ],
-          ),
-          Row(        
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'Test Result',
-                  iconData: Icons.login,
-                  color: Colors.green.shade900,
-                  onTab: () {
-                    Navigator.pushNamed(context, '/testresult');
-                  },
-                ),
-              ),
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'Photo Gallery',
-                  iconData: Icons.verified_user,
-                  color: Colors.green.shade900,
-                  onTab: () {  
-                    Navigator.pushNamed(context, '/photogallery');                  
-                  },
-                ),
-              ),              
-            ],
-          ),
-          Row(        
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'location',
-                  iconData: Icons.map,
-                  color: Colors.green.shade900,
-                  onTab: () {
-                    Navigator.pushNamed(context, '/location');
-                  },
-                ),
-              ),
-              Card(
-                elevation: 10,
-                color: Colors.green.shade900,
-                child: _customButton(
-                  context: context,
-                  name: 'contact',
-                  iconData: Icons.contact_support,
-                  color: Colors.green.shade900,
-                  onTab: () {                    
-                  Navigator.pushNamed(context, '/contact');
-                  },
-                ),
-              ),              
-            ],
-          ),
-        ],
       ),
-          ],
-        ),
-      ),
+    
     );
   }
 
@@ -187,11 +206,10 @@ class MyHomePage extends StatelessWidget {
               alignment: Alignment.center,
               padding: EdgeInsets.all(20.00),
               margin: EdgeInsets.all(8.00),
-              height: 120.00,
-              width: MediaQuery.of(context!).size.width*.40,                  
-              child: Column(
+              width: MediaQuery.of(context!).size.width,                  
+              child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                         iconData,

@@ -1,22 +1,200 @@
 [
     {
-       "id": 1,
+       "id": 2016706489,
        "name": "Parveen Akhter",
        "username": "Headmistress",
-       "email": "",
-       "address": {
-           "id": 1,
-           "street": "",
-           "suit": "",
-           "city": "",
-           "zipcode": "",
-           "geo": {
-               "lat": "",
-               "lag": ""
-           }
-       },
-       "phone": "",
-       "website": ""
-
+       "phone": "01780395520",
+       "address": "Brahmanbaria",
+       "image":"assets/images/parveen_akhter.jpg"
+       
+    },
+    {
+       "id": 2016702778,
+       "name": "Md. Abdul Latif",
+       "username": "Senior Teacher",
+       "phone": "01768812313",
+       "address": "Brahmanbaria",
+       "image":"assets/images/md_abdul_latif.jpg"
+       
+    },
+    {
+       "id": 2016707274,
+       "name": "Md. Aminul Islam",
+       "username": "Senior Teacher",
+       "phone": "01716328568",
+       "address": "Brahmanbaria",
+       "image":"assets/images/md_aminul_islam.jpg"
+       
+    },
+    {
+       "id": 2016705813,
+       "name": "Lakshmi Rani Banik",
+       "username": "Senior Teacher",
+       "phone": "01714356547",
+       "address": "Brahmanbaria",
+       "image":"assets/images/lakshmi_rani_banik.jpg"
+       
+    },
+    {
+       "id": 2016708549,
+       "name": "Mohammad Gias Uddin Mridha",
+       "username": "Senior Teacher",
+       "phone": "01815476746",
+       "address": "Brahmanbaria",
+       "image":"assets/images/mohammad_gias_uddin_mridha.jpg"
+       
+    },
+    {
+       "id": 2016708822,
+       "name": "Debabrata Das",
+       "username": "Senior Teacher",
+       "phone": "01777427415",
+       "address": "Brahmanbaria",
+       "image":"assets/images/debabrata_das.jpg"
+       
+    },
+    {
+       "id": 2016708169,
+       "name": "Md. Kamrul Anam Khan",
+       "username": "Senior Teacher",
+       "phone": "01717802961",
+       "address": "Brahmanbaria",
+       "image":"assets/images/md_kamrul_anam_khan.jpg"
+       
+    },
+    {
+       "id": 2016701143,
+       "name": "Badrun Nahar",
+       "username": "Senior Teacher",
+       "phone": "01711040198",
+       "address": "Dhaka",
+       "image":"assets/images/badrun_nahar.jpg"
+       
+    },
+    {
+       "id": 2016703628,
+       "name": "Sakera Akhter",
+       "username": "Senior Teacher",
+       "phone": "01745026110",
+       "address": "Brahmanbaria",
+       "image":"assets/images/sakera_akhter.jpg"
+       
+    },
+    {
+       "id": 2016708149,
+       "name": "Nachima Begum",
+       "username": "Senior Teacher",
+       "phone": "01926367009",
+       "address": "Brahmanbaria",
+       "image":"assets/images/nachima_begum.jpg"
+       
+    },
+    {
+       "id": 2016709714,
+       "name": "Mohammad Humayun Kabir",
+       "username": "Senior Teacher",
+       "phone": "01718909147",
+       "address": "Narsingdi",
+       "image":"assets/images/mohammad_humayun_kabir.jpg"
+       
+    },
+    {
+       "id": 2016708177,
+       "name": "Mohammad Yunus Ali",
+       "username": "Senior Teacher",
+       "phone": "01720370073",
+       "address": "Brahmanbaria",
+       "image":"assets/images/mohammad_yunus_ali.jpg"
+       
+    },
+    {
+       "id": 2016703053,
+       "name": "Faisal Ahmed",
+       "username": "Senior Teacher",
+       "phone": "01711707054",
+       "address": "Brahmanbaria",
+       "image":"assets/images/faisal_ahmed.jpg"
+       
+    },
+    {
+       "id": 2016706508,
+       "name": "Mohammad Mostakim Khan",
+       "username": "Senior Teacher",
+       "phone": "01746273090",
+       "address": "Comilla",
+       "image":"assets/images/mohammad_mostakim_khan.jpg"
+       
+    },
+    {
+       "id": 2016707706,
+       "name": "Mohammad Taibur Rahman",
+       "username": "Senior Teacher",
+       "phone": "01715731948",
+       "address": "Brahmanbaria",
+       "image":"assets/images/mohammad_taibur_rahman.jpg"
+       
+    },
+    {
+       "id": 2016707191 ,
+       "name": "Farzana Afroz",
+       "username": "Senior Teacher",
+       "phone": "01911713203",
+       "address": "Brahmanbaria",
+       "image":"assets/images/farzana_afroz.jpg"
+       
+    },
+    {
+       "id": 2016703831,
+       "name": "Saiful Islam Sarkar",
+       "username": "Assistant Teacher (English)",
+       "phone": "01920462032",
+       "address": "Brahmanbaria",
+       "image":"assets/images/saiful_islam_sarkar.jpg"
+       
+    },
+    {
+       "id": 2017714110,
+       "name": "Mohammad Mohiuddin",
+       "username": "Assistant Teacher (Mathematics)",
+       "phone": "01920017815",
+       "address": "Comilla",
+       "image":"assets/images/mohammad_mohiuddin.jpg"
+       
+    },
+    {
+       "id": 2016708381,
+       "name": "Md. Manjurul Ahsan",
+       "username": "Assistant Teacher (Physics)",
+       "phone": "01917428219",
+       "address": "Brahmanbaria",
+       "image":"assets/images/md_manjurul_ahsan.jpg"
+       
+    },
+    {
+       "id": 2018714745,
+       "name": "Irana Siddique",
+       "username": "Assistant Teacher (Physics)",
+       "phone": "01916392305",
+       "address": "Gazipur",
+       "image":"assets/images/irana_siddique.jpg"
+       
+    },
+    {
+       "id": 2016709447,
+       "name": "Fatema Tanzim",
+       "username": "Assistant Teacher (Biology)",
+       "phone": "01760604459",
+       "address": "Brahmanbaria",
+       "image":"assets/images/fatema_tanzim.jpg"
+       
+    },
+    {
+       "id": 2016708973,
+       "name": "Md. Jamaluddin",
+       "username": "Assistant Teacher (Agriculture Education)",
+       "phone": "01818393752",
+       "address": "Comilla",
+       "image":"assets/images/md_jamaluddin.jpg"
+       
     }
 ]

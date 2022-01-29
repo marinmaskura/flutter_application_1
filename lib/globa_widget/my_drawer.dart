@@ -5,7 +5,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-        backgroundColor: Colors.blue.shade300,
+        backgroundColor: Colors.green.shade900,
         child: Wrap(
           children: [
             GestureDetector(
@@ -13,10 +13,12 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pop(context);
               },
               child: UserAccountsDrawerHeader(
-                accountName: Text('Maskura Akter Marin',
+                accountName: Text('Govt. Model Girls High School',
                 style: TextStyle(fontWeight: FontWeight.w600,
-                fontSize: 20.0),),
-                accountEmail: Text('maskuraaktermarin@gmail.com'),
+                fontSize: 23.0),),
+                accountEmail: Text('Brahmanbaria Sadar, Brahmanbaria', 
+                style: TextStyle(
+                fontSize: 18.0)),
                 currentAccountPicture: CircleAvatar(
                   child: ClipOval(
                     child: Image.asset("assets/images/103225.png"),
@@ -30,86 +32,103 @@ class MyDrawer extends StatelessWidget {
                     ),
               ),
             ),
+            // ListTile(
+            //   leading: Icon(Icons.home,
+            //   color: Colors.white,),
+            //   title: Text('Home Page', style: TextStyle(fontWeight: FontWeight.bold, 
+            //           color: Colors.white,
+            //           fontSize: 15.0)
+            //   ),
+            //   onTap: (){
+            //     Navigator.pushNamed(context, '/MyHomePage');
+            //   },
+            // ),
             ListTile(
-              leading: Icon(Icons.home,
+              leading: Icon(Icons.text_snippet_outlined,
               color: Colors.white,),
-              title: Text('Home Page'),
+              title: Text('About', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)
+              ),
               onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
+                Navigator.pushNamed(context, '/firstpage');
               },
             ),
             ListTile(
-              leading: Icon(Icons.social_distance,
+              leading: Icon(Icons.how_to_reg_outlined,
               color: Colors.white,),
-              title: Text('Social Page'),
+              title: Text('Introduction', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)),
               onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
+                Navigator.pushNamed(context, '/introduction');
               },
             ),
             ListTile(
-              leading: Icon(Icons.home,
+              leading: Icon(Icons.portrait_outlined,
               color: Colors.white,),
-              title: Text('Facebook'),
+              title: Text('Teacher List', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)
+                      ),
               onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
+                Navigator.pushNamed(context, '/teacherview');
               },
             ),
             ListTile(
-              leading: Icon(Icons.home,
+              leading: Icon(Icons.supervised_user_circle,
               color: Colors.white,),
-              title: Text('Education'),
+              title: Text('Student', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)),
               onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
+                Navigator.pushNamed(context, '/studentview');
+              },
+            ),
+            // ListTile(
+            //   leading: Icon(Icons.home,
+            //   color: Colors.white,),
+            //   title: Text('Login'),
+            //   onTap: (){
+            //     Navigator.pushNamed(context, '/MyHomePage');
+            //   },
+            // ),
+            // ListTile(
+            //   leading: Icon(Icons.home,
+            //   color: Colors.white,),
+            //   title: Text('User'),
+            //   onTap: (){
+            //     Navigator.pushNamed(context, '/MyHomePage');
+            //   },
+            // ),
+            ListTile(
+              leading: Icon(Icons.photo_camera_outlined,
+              color: Colors.white,),
+              title: Text('Photo Gallery', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)),
+              onTap: (){
+                Navigator.pushNamed(context, '/photogallery');
               },
             ),
             ListTile(
-              leading: Icon(Icons.home,
+              leading: Icon(Icons.phone_outlined,
               color: Colors.white,),
-              title: Text('Registration'),
+              title: Text('Contact Us', style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 15.0)),
               onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
+                Navigator.pushNamed(context, '/manpower');
               },
             ),
-            ListTile(
-              leading: Icon(Icons.home,
-              color: Colors.white,),
-              title: Text('Login'),
-              onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.home,
-              color: Colors.white,),
-              title: Text('User'),
-              onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.home,
-              color: Colors.white,),
-              title: Text('Location'),
-              onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.home,
-              color: Colors.white,),
-              title: Text('Contact'),
-              onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.home,
-              color: Colors.white,),
-              title: Text('Account'),
-              onTap: (){
-                Navigator.pushNamed(context, '/MyHomePage');
-              },
-            ),
+            // ListTile(
+            //   leading: Icon(Icons.home,
+            //   color: Colors.white,),
+            //   title: Text('Account'),
+            //   onTap: (){
+            //     Navigator.pushNamed(context, '/MyHomePage');
+            //   },
+            // ),
           ],
         ),
       );

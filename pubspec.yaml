@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  webview_flutter: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +46,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+  url_launcher: ^6.0.18
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,10 +62,49 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/103225.png
+    - assets/images/shongbordhona_1.jpg
+    - assets/images/shongbordhona_2.jpg
+    - assets/images/shongbordhona_3.jpg
+    - assets/images/shongbordhona_4.jpg
+    - assets/images/shongbordhona_5.jpg
+    - assets/images/ovibabok_chowni_1.jpg
+    - assets/images/ovibabok_chowni_2.jpg
+    - assets/images/ovibabok_chowni_3.jpg
+    - assets/images/ovibabok_chowni_4.jpg
+    - assets/images/ovibabok_chowni_5.jpg
+    - assets/images/ovibabok_chowni_6.jpg
+    - assets/images/ovibabok_chowni_7.jpg
+    - assets/images/ovibabok_chowni_8.jpg
+    - assets/images/s_s_c_2021_student.jpg
     - assets/images/01.jpg
+    - assets/images/image_1.jpg
+    - assets/images/parveen_akhter.jpg
+    - assets/images/md_abdul_latif.jpg
+    - assets/images/md_aminul_islam.jpg
+    - assets/images/lakshmi_rani_banik.jpg
+    - assets/images/mohammad_gias_uddin_mridha.jpg
+    - assets/images/debabrata_das.jpg
+    - assets/images/md_kamrul_anam_khan.jpg
+    - assets/images/badrun_nahar.jpg
+    - assets/images/sakera_akhter.jpg
+    - assets/images/nachima_begum.jpg
+    - assets/images/mohammad_humayun_kabir.jpg
+    - assets/images/mohammad_yunus_ali.jpg
+    - assets/images/faisal_ahmed.jpg
+    - assets/images/mohammad_mostakim_khan.jpg
+    - assets/images/mohammad_taibur_rahman.jpg
+    - assets/images/farzana_afroz.jpg
+    - assets/images/saiful_islam_sarkar.jpg
+    - assets/images/mohammad_mohiuddin.jpg
+    - assets/images/md_manjurul_ahsan.jpg
+    - assets/images/irana_siddique.jpg
+    - assets/images/fatema_tanzim.jpg
+    - assets/images/md_jamaluddin.jpg
     - assets/images/bangladesh_map.png
     - assets/json/teacher_list.json
+    - assets/json/web_link.json
     - assets/json/student_list.json
+    - assets/json/student_class_list.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

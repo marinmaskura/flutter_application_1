@@ -2,53 +2,66 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/globa_widget/my_drawer.dart';
-import 'package:flutter_application_1/model/student_model.dart';
-import 'package:flutter_application_1/model/teacher_model.dart';
-import 'package:flutter_application_1/repositories/student_repo.dart';
-import 'package:flutter_application_1/model/department_models.dart';
+import 'package:flutter_application_1/model/student_class_model.dart';
+import 'package:flutter_application_1/repositories/student_class_repo.dart';
+
 
 class StudentView extends StatelessWidget {
   const StudentView({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    List<Department> deptlist = [
-        Department(id: 1, name: "Class One", img: ""),
-        Department(id: 1, name: "Class Two", img: ""),
-        Department(id: 1, name: "Class Three", img: ""),
-        Department(id: 1, name: "Class Four", img: ""),
-        Department(id: 1, name: "Class Five", img: ""),
-        Department(id: 1, name: "Class Six", img: ""),
-        Department(id: 1, name: "Class Seven", img: ""),
-        Department(id: 1, name: "Class Eight", img: ""),
-        Department(id: 1, name: "Class Nine", img: ""),
-        Department(id: 1, name: "Class Ten", img: ""),
-      ] ; 
     return Scaffold(
-      
+      // backgroundColor: Colors.grey.shade500,
       endDrawer: MyDrawer(),
-      appBar: AppBar(title: Center(child: Text('Student')), 
+      appBar: AppBar(title: Center(child: Text('Class')), 
+      backgroundColor: Colors.green.shade900,
       leading: ElevatedButton(onPressed:  (){
-        Navigator.pushNamed(context, '/');
-      }, child: Icon(Icons.arrow_back),
-      )     
+        Navigator.pop(context);
+      }, child: Icon(Icons.arrow_back, ),
+      style: ElevatedButton.styleFrom(primary: Colors.green.shade900),
+      )
+          
       ),
       body: FutureBuilder(
-        future: StudentRepo.getStudentList(),
+        future: StudentClassRepo.getStudentList(),
         builder: (context, snapshot) {
-          List<StudentModel> stu = snapshot.data as List<StudentModel>;
+          List<StudentList> stu = snapshot.data as List<StudentList>;
           print(stu.length);
           return ListView.builder(
             itemCount: stu.length,
             itemBuilder: (context, index) {
-              StudentModel student = stu.elementAt(index);
-              return ListTile(
-                title: Text('${student.name}'),
-                // leading: CircleAvatar(
-                //   child: 
-                // ),
-              );
-              
+              StudentList student = stu.elementAt(index);
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                child: ElevatedButton(
+                  onPressed: (){
+                    Navigator.pushNamed(context, '/studentdetailsview',arguments:stu.elementAt(index).studentList);
+                }, child: ListTile(
+                  leading:CircleAvatar(child: Text('${student.id}',
+                  style: TextStyle(  
+                      color: Colors.green.shade900,)
+                  ),
+                  backgroundColor: Colors.white,
+                  ), 
+                  title: Text('${student.className}',
+                  style: TextStyle(fontWeight: FontWeight.bold, 
+                      color: Colors.white,
+                      fontSize: 20.0)
+                  ), 
+                    
+                ),
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.all(10.0),
+                    primary: Colors.green.shade900,
+                    onPrimary: Colors.white,
+  
+                  // side: BorderSide(color: Colors.grey, width: 5),
+                  shadowColor: Colors.red,
+                  elevation: 5,
+                ),                
+                ),
+              );              
             }
             );
         }
