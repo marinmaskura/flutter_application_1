@@ -15,8 +15,7 @@ All of user are access to this apps and know about of govt model girls high scho
 
 ## Screen Shot
 
-<img src="assets/images/S1.jpeg" height="250"> 
-<img src="assets/images/S2.jpeg" height="250">
+<img src="assets/images/S1.jpeg" height="250"> <img src="assets/images/S2.jpeg" height="250">
 <img src="assets/images/S3.jpeg" height="250">
 <img src="assets/images/S4.jpeg" height="250">
 <img src="assets/images/S5.jpeg" height="250">
