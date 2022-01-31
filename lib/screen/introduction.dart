@@ -38,7 +38,7 @@ class Introduction extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.w800,
                     fontSize: 25.0)
                      )
-                    )                    
+                    )
                   ),
                 ),
               ],

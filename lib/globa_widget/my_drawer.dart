@@ -32,29 +32,21 @@ class MyDrawer extends StatelessWidget {
                     ),
               ),
             ),
-            // ListTile(
-            //   leading: Icon(Icons.home,
-            //   color: Colors.white,),
-            //   title: Text('Home Page', style: TextStyle(fontWeight: FontWeight.bold, 
-            //           color: Colors.white,
-            //           fontSize: 15.0)
-            //   ),
-            //   onTap: (){
-            //     Navigator.pushNamed(context, '/MyHomePage');
-            //   },
-            // ),
-            ListTile(
-              leading: Icon(Icons.text_snippet_outlined,
-              color: Colors.white,),
-              title: Text('About', style: TextStyle(fontWeight: FontWeight.bold, 
-                      color: Colors.white,
-                      fontSize: 15.0)
-              ),
-              onTap: (){
-                Navigator.pushNamed(context, '/firstpage');
-              },
-            ),
-            ListTile(
+            
+            Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.text_snippet_outlined,
+                  color: Colors.white,),
+                  title: Text('About', style: TextStyle(fontWeight: FontWeight.bold, 
+                          color: Colors.white,
+                          fontSize: 15.0)
+                  ),
+                  onTap: (){
+                    Navigator.pushNamed(context, '/firstpage');
+                  },
+                ),
+              ListTile(
               leading: Icon(Icons.how_to_reg_outlined,
               color: Colors.white,),
               title: Text('Introduction', style: TextStyle(fontWeight: FontWeight.bold, 
@@ -85,22 +77,6 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, '/studentview');
               },
             ),
-            // ListTile(
-            //   leading: Icon(Icons.home,
-            //   color: Colors.white,),
-            //   title: Text('Login'),
-            //   onTap: (){
-            //     Navigator.pushNamed(context, '/MyHomePage');
-            //   },
-            // ),
-            // ListTile(
-            //   leading: Icon(Icons.home,
-            //   color: Colors.white,),
-            //   title: Text('User'),
-            //   onTap: (){
-            //     Navigator.pushNamed(context, '/MyHomePage');
-            //   },
-            // ),
             ListTile(
               leading: Icon(Icons.photo_camera_outlined,
               color: Colors.white,),
@@ -121,6 +97,13 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, '/manpower');
               },
             ),
+           ],
+          ),
+            
+            
+            
+            
+            
             // ListTile(
             //   leading: Icon(Icons.home,
             //   color: Colors.white,),
